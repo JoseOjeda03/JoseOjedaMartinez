@@ -1,0 +1,9 @@
+1. Imprimir el nombre de los empleados.
+
+2. En un solo string imprimir la direccion completa de cada empleado.
+
+3. Imprimir los Hobbies del primer y ultimo empleado.
+
+4. Imprimir el nombre y la edad de los 3 ultimos empleados.
+
+5. Imprimir el nombre y el primer telefono de todos los empleados.
