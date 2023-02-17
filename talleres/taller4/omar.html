@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="  relative">
+
+    <div class="felx flex-wrap justify-center ml-60 ">
+        <h1 class="text-2xl">Pokedex</h1>
+        <small>Por favor ingrese el pokemon que desea mirar</small>
+    </div>
+    <br>
+    <div id="impbusq">
+    <input class="text-zinc-400 border border-2 border-black ml-60" id="busca" type="text" value="Por favor ingrese un pokemon-">
+    <button onclick="buscar()">Buscar</button>
+    </div>      
+    <br>
+    <br>
+    </div>
+
+    <div class="flex  bg-white "></div>
+    
+        <div class="container-card flex flex-wrap justify-center mr-30 ml-30 h-full space-x-8" id="pokemons-list">
+            
+        </div>
+        <br>
+        <div id="links" class="link flex justify-center">
+            
+        </div>
+    </div>
+</div>
+    <script src="omar.js"></script>
+</body>
+</html>
