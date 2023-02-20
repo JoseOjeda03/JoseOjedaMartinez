@@ -15,7 +15,7 @@ let notaFinal=0;
 
 do{
     let nota1=Number(prompt("digite la nota del examen 1 "))
-    if(!nota1<0 || nota1>5){
+    if(nota1<=0 || nota1>5){
         alert("el numero tiene que ser entre 0 y 5")
      
     }else{
@@ -26,7 +26,7 @@ do{
 j=0;
 do{
 let nota2=Number(prompt("digite la nota del examen 2 "))
-if(nota2<0 || nota2>5){
+if(nota2<=0 || nota2>5){
     alert("el numero tiene que ser entre 0 y 5")
     
 }else{
@@ -37,7 +37,7 @@ if(nota2<0 || nota2>5){
 j=0;
 do{
 let nota3=Number(prompt("digite la nota del examen 3 "))
-if(nota3<0 || nota3>5){
+if(nota3<=0 || nota3>5){
     alert("el numero tiene que ser entre 0 y 5")
     
 }else{
@@ -50,7 +50,7 @@ promN=sumaN/3;
 porN=promN*0.55;
 do{
 let trabajos1=Number(prompt("digite la nota del taller 1"))
-if(trabajos1<0 || trabajos1>5){
+if(trabajos1<=0 || trabajos1>5){
     alert("el numero tiene que ser entre 0 y 5")
     
 }else{
@@ -61,7 +61,7 @@ if(trabajos1<0 || trabajos1>5){
 j=0;
 do{
 let trabajos2=Number(prompt("digite la nota del taller 2"))
-if(trabajos2<0 || trabajos2>5){
+if(trabajos2<=0 || trabajos2>5){
     alert("el numero tiene que ser entre 0 y 5")
     
 }else{
@@ -74,7 +74,7 @@ promT=sumaT/2;
 porT=promT*0.15;
 do{
 let Examf=Number(prompt("digite la nota del examen final"))
-if(Examf<0 || Examf>5){
+if(Examf<=0 || Examf>5){
     alert("el numero tiene que ser entre 0 y 5")
  
 }else{
@@ -86,7 +86,7 @@ if(Examf<0 || Examf>5){
 j=0;
 do{
 let auto=Number(prompt("digite la autoevaluacion"))
-if(auto<0 || auto>5){
+if(auto<=0 || auto>5){
     alert("el numero tiene que ser entre 0 y 555")
     j=1;
 }else{
@@ -98,7 +98,7 @@ if(auto<0 || auto>5){
 j=0;
 do{
 let coaAuto=Number(prompt("digite la co-evaluacion"))
-if(coaAuto<0 || coaAuto>5){
+if(coaAuto<=0 || coaAuto>5){
     alert("el numero tiene que ser entre 0 y 5")
   
 }else{
