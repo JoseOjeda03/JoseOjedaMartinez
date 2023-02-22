@@ -1,0 +1,44 @@
+{
+  "Datos": [
+    {
+      "Pregunta": "¿Quien dijo la poetica frase 'Si tu novio no te mama el culo, pa' eso que no mame'?",
+      "A": "Maquiavelo",
+      "B": "Descartes",
+      "C": "Aristoteles",
+      "D": "Bad bunny",
+      "respuestaCorrecta": "Bad bunny"
+    },
+    {
+      "Pregunta": "¿Cual es el pais mas grande del mundo?",
+      "A": "Rusia",
+      "B": "India",
+      "C": "China",
+      "D": "Japon",
+      "respuestaCorrecta": "Rusia"
+    },
+    {
+      "Pregunta": "¿Que pais tiene la forma de bota?",
+      "A": "Japon",
+      "B": "Italia",
+      "C": "Eslovania",
+      "D": "Neonlandia",
+      "respuestaCorrecta": "Italia"
+    },
+    {
+      "Pregunta": "¿Que color respresenta la esperanza ?",
+      "A": "Rojo",
+      "B": "Rosado",
+      "C": "Blanco",
+      "D": "Verde",
+      "respuestaCorrecta": "Verde"
+    },
+    {
+      "Pregunta": "¿Qué instrumento óptico permite ver los astros de cerca?",
+      "A": "Caleidoscopio",
+      "B": "Telescopio",
+      "C": "Brujula",
+      "D": "Lupa",
+      "respuestaCorrecta": "Telescopio"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "preguntas": [
+    {
+      "pregunta": "Sentencia utilizada en Java para mostrar el mensaje “Texto Mostrado”.",
+      "opcion1": "a. System.out.println(“Texto Mostrado”);  ",
+      "opcion2": "b. Wait wind “Texto Mostrado”; ",
+      "opcion3": "Msgbox(“Texto Mostrado”);",
+        "opcion4": "console.log(´Texto mostrado´)",
+        "respuesta": "a. System.out.println(“Texto Mostrado”);  "
+      
+
+    },
+    {
+        "pregunta": "La Programación Orientación a Objetos está basada en tres métodos de organización que utilizamos desde la infancia. Determine cual no es método de organización Seleccione una respuesta.",
+        "opcion1": "a. Entre sus atributos y un Objeto  ",
+        "opcion2": " b. Entre un objeto y su relación con otros objetos  ",
+        "opcion3": "c. Entre un objeto y sus atributos ",
+          "opcion4": "d. Entre un objeto y sus componentes donde incluso otros objetos pueden formar parte de otros objetos  ",
+          "respuesta": "a. Entre sus atributos y un Objeto "
+      },
+
+    {
+        "pregunta": " De acuerdo con la siguiente definición esta hace referencia a: “Dado que permite un tratamiento diferenciado de aquellos objetos que permanecen constantes en el tiempo sobre aquellos que cambian con frecuencia permite aislar las partes del programa que permanecen inalterables en el tiempo.” ",
+        "opcion1": "a. Uniformidad  ",
+        "opcion2": "b. Estabilidad",
+        "opcion3": "c. Comprensión",
+        "opcion4": "d. Flexibilidad   ",
+        "respuesta": "b. Estabilidad"
+    },
+    {
+        "pregunta": "De acuerdo con la siguiente definición esta hace referencia a: “Un concepto importante en campo de la programación es la Abstracción, ya que la Abstracción se puede definir como la capacidad de examinar algo sin preocuparse de los detalles internos. En un programa estructurado, es suficiente conocer que un procedimiento sea fiable, para que se pueda utilizar sin tener que conocer cómo funciona su interior.” ",
+        "opcion1": " a. Programación lineal ",
+        "opcion2": " b. Programación Orientada a Objetos",
+        "opcion3": " c. Programación Estructurada ",
+          "opcion4": "d. Programación Modular ",
+          "respuesta": "c. Programación Estructurada  "
+    },
+    {
+        "pregunta": "Cuando decimos que Los objetos de distintas clases pertenecientes a una misma jerarquía o que implementan una misma interface pueden tratarse de una forma general e individualizada, al mismo tiempo.",
+        "opcion1": " a. Todas de las Anteriores",
+        "opcion2": " b. Polimorfismo ",
+        "opcion3": " c. Herencia ",
+          "opcion4": "d. Encapsulación ",
+          "respuesta": "b. Polimorfismo "
+    }
+
+
+  ]
+}
