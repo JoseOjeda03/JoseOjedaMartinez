@@ -2,8 +2,8 @@ var form = document.getElementById('form');
 form.addEventListener("submit", submitHandler);
 
 const mostrar=document.getElementById('modal');
-
-
+const histotial=document.getElementById('histotial');
+let html2 =""
 const miStorage = window.localStorage;
 
 
@@ -53,22 +53,45 @@ let result= false
    else{
     result= false
 
-    let fechahoy= hoy +"/" +mesActual+"/" + anno
-    let fechaCumple = cumpledia.getDate()+1 +"/" +cumpledia.getMonth() + 1 +"/" + cumpledia.getFullYear()
-    console.log(fechahoy,fechaCumple)
-    this.diasFaltan(hoy,mesActual,anno,cumpledia.getDate()+1,cumpledia.getMonth() + 1,cumpledia.getFullYear())
+    let fechahoy= cumpledia.getFullYear() +"-" +mesActual+"-" + hoy
+
+if(cumpledia.getMonth() + 1>=9){
+  const mesC = cumpledia.getMonth() + 1
+}
+
+
+    var fechaInicio = new Date(fechahoy).getTime();
+  
+    var fechaFin    = cumpledia.getTime();
+
+
+    this.diasFaltan(fechaInicio,fechaFin)
 
    }
    
   return result
  }
 
- diasFaltan(hoy,mesActual,anno,diaC,mesC,annoC){
-       
+ diasFaltan(fechahoy,fechaCumple){
+   let resultado=0
 
-  const resultado =     Math.floor((Date.UTC(anno, mesActual, hoy) - Date.UTC(annoC, mesC, diaC) ) /(1000 * 60 * 60 * 24));
+   
+   var diff =  fechaCumple-fechahoy;
+   
+ 
+        if(fechaCumple> fechahoy){
+         resultado = diff/(1000*60*60*24) +1 ;
 
-  localStorage.setItem('disFaltan', resultado );
+        }else{
+         resultado = (diff/(1000*60*60*24))+365+1  ;
+        }
+
+        
+        
+
+  
+
+  localStorage.setItem('disFaltan', parseInt(resultado ) );
 }       
     
 
@@ -99,16 +122,29 @@ function submitHandler(e) {
         const html =` 
         <div class="flex flex-col w-48 w-48">
     
-    
+        <label for="">su nombre es :</label>
         <p class="">${nombreCompleto}  </p>
-        <p class=""> </p>
+        <label for="">su fecha de cumpleaños es:</label>
+        <p class="">${personaF.fecha} </p>
+        <p class=""> es tu cumpleaños</p>
         <img src="img/feliz.gif" alt="">
     
      </div>
         
         `
+
+
+        html2 = ` <tr>
+
+        <td>${nombreCompleto}</td>
+    
+        <td>SI</td>
+    
+     
+    
+      </tr>`
         mostrar.innerHTML=html   
-        
+        histotial.innerHTML+=html2
         localStorage.setItem('nombrecompleto', nombreCompleto );
         localStorage.setItem('fecha', personaF.fecha );
         localStorage.setItem('img', personaF.imgcumple );
@@ -119,16 +155,30 @@ function submitHandler(e) {
 
         personaF.imgcumple="img/sad.gif"
         const html =` 
-        <div class="flex flex-col w-48 w-48">
+        <div class="flex flex-col w-64 w-64">
     
     
+        <label for="">su nombre es :</label>
         <p class="">${nombreCompleto}  </p>
-        <p class=""> </p>
+        <label for="">su fecha de cumpleaños es:</label>
+        <p class="">${personaF.fecha} </p>
+        <p class="">no es tu cumpleaños</p>
         <img src="img/sad.gif" alt="">
     
      </div>
         
         `
+
+        html2 = ` <tr>
+
+        <td>${nombreCompleto}</td>
+    
+        <td>NO</td>
+    
+     
+    
+      </tr>`
+        histotial.innerHTML+=html2
         mostrar.innerHTML=html 
         localStorage.setItem('nombrecompleto', nombreCompleto );
         localStorage.setItem('fecha', personaF.fecha );

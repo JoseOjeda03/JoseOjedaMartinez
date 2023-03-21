@@ -10,7 +10,7 @@ if(bool == "true"){
     const html=`<div class=" grid justify-items-center  text-1xl  >
 <label for="">su nombre es :</label>
 <p class="">${nombreCompleto}  </p>
-<label for=""> su fecha de cumple años es :</label>
+<label for="">su nombre es :</label>
 
 <p class="">${fecha} </p>
 <p class=""> es tu cumpleaños</p>
